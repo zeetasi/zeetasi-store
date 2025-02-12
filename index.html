@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeetasi Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zeetasi Store</h1>
+        <button id="toggleMode">🌙 Mode Gelap</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#" onclick="toggleSubdomainForm()">Tambah Subdomain</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Selamat Datang di Zeetasi Store</h2>
+            <p>Toko online terbaik dengan berbagai produk berkualitas.</p>
+        </section>
+
+        <section id="subdomainForm" class="hidden">
+            <h2>Tambah 5 Subdomain</h2>
+            <button onclick="createSubdomains()">Buat 5 Subdomain</button>
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Zeetasi Store. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

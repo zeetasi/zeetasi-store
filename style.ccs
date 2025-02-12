@@ -1,0 +1,73 @@
+/* Warna Dasar */
+:root {
+    --primary-color: #007bff;
+    --background-light: #ffffff;
+    --background-dark: #121212;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+}
+
+/* Reset CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+/* Mode Gelap */
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    margin: 10px;
+}
